@@ -2,6 +2,7 @@
 
 export default function Home() {
   const onShare = async () => {
+    navigator.sh;
     try {
       if (typeof navigator.share === "undefined") {
         alert("지원 안함..");
@@ -9,9 +10,7 @@ export default function Home() {
       }
 
       await navigator.share({
-        title: "타이틀입니다.",
-        text: "공유합니다.",
-        url: "https://dev.data.id/sadfasdfasdfasdf",
+        url: "",
       });
       console.log("공유 성공");
     } catch (e) {
