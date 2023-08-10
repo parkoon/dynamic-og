@@ -1,11 +1,10 @@
 "use client";
 
 export default function Home() {
-  const onShare = async () => {
-    navigator.sh;
+  const onShare = async (fallback?: () => void) => {
     try {
-      if (typeof navigator.share === "undefined") {
-        alert("지원 안함..");
+      if (navigator.canShare() && typeof navigator.share === "undefined") {
+        fallback;
         return;
       }
 
@@ -18,5 +17,5 @@ export default function Home() {
     }
   };
 
-  return <button onClick={onShare}>share</button>;
+  return <button onClick={() => onShare()}>share</button>;
 }
