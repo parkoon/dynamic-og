@@ -28,8 +28,9 @@ export async function generateMetadata(
   console.log("🚀 ~ file: page.tsx:76 ~ previousImages:", previousImages);
 
   return {
-    title: "Open graph",
+    title: "이력서",
     metadataBase: new URL("https://dynamic-og-ruby.vercel.app"),
+    description: "김현석입니다.",
     // openGraph: {
     //   images: ['/some-specific-page-image.jpg', ...previousImages],
     // },

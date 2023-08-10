@@ -24,9 +24,8 @@ export default async function Image() {
       // ImageResponse JSX element
       <div
         style={{
-          fontSize: 128,
-          background: "red",
-          color: "#fff",
+          fontSize: 50,
+          color: "#222",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -34,8 +33,8 @@ export default async function Image() {
           justifyContent: "center",
         }}
       >
-        <img src="https://fastly.picsum.photos/id/197/200/300.jpg?hmac=p4Xo0YBZC4uaAtKFs7gx7d5446a8gUo7X6bEI9mgkpg" />
-        오지오지오지
+        <img src="https://ca.slack-edge.com/TPRUYBA3T-UQ1N493K9-ddea6ca50f0b-512" />
+        <h2>김현석입니다.</h2>
       </div>
     ),
     // ImageResponse options
