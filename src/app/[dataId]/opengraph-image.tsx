@@ -13,12 +13,9 @@ export const size = {
 
 export const contentType = "image/png";
 
-const SCALE = 4.5;
-
 export default async function Image() {
   return new ImageResponse(
     (
-      // ImageResponse JSX element
       <div
         style={{
           display: "flex",
@@ -26,10 +23,6 @@ export default async function Image() {
           background: "#E1E6FA",
           width: "100%",
           height: "100%",
-          // color: "#222",
-          // alignItems: "center",
-          // justifyContent: "center",
-          // background: "#fff",
         }}
       >
         <div

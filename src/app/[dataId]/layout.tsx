@@ -1,12 +1,14 @@
 import { Metadata } from "next";
 
 export async function generateMetadata({ params }: { params: {} }) {
-  console.log(params);
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+  const data = await res.json();
+
   return {
     metadataBase: new URL("https://dynamic-og-ruby.vercel.app"),
-    title: "title",
-    description: "description",
-    keywords: ["k", "e", "y", "w", "o", "r", "d", "s"],
+    title: data.title,
+    description: data.body,
+    keywords: data.title.split(" "),
     creator: "user name",
     authors: [
       {
